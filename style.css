@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background: #BDDFFF;
+}
+
+.heading{
+    width: 100vw;
+    height: auto;
+}
+
+.image {
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.image img{
+    width: 80vw;
+    height: auto;
+}
+.personal{
+    width: 100vw;
+    font-family: 'Righteous', cursive;
+    padding: 8% 5% 0 5%;
+    display: flex;
+    justify-content: center;
+}
+.questions{
+    width: 80vw;
+}
+input{
+    width: 70vw;
+    height: 20px;
+    padding: 25px;
+    font-size: 1rem;
+    position: relative;
+    top: 120px;
+    background: #d4e4f3 ;
+    border: none;
+    border-radius: 5px;
+}
+
+
+input[type="file"] .file-upload-button{
+    width: 50px;
+    background: #1017D0;
+}
+.qsn{
+    padding: 20px 0px;
+    margin: 70px 0px;
+    height: 250px;
+    background:white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.texthead{
+    padding-left: 3%;
+    background: linear-gradient(#0094FF, #1017D0);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 70vw;
+    min-height: 60px;
+    border-radius: 0 40px 40px 0;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 9%;
+}
+.qsn label {
+    font-size: 1.5rem;
+    color: whitesmoke;
+
+}
+
+.submit button{
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    border-radius: 60px;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-size: 1.5rem;
+    background: linear-gradient(#0094FF, #1017D0);
+    color: whitesmoke;
+}
+
+.footer{
+    width: 100vw;
+    margin-bottom: 10px;
+    
+}
+
+.footer img{
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media(max-width:540px){
+    .heading{
+        height: 30vh;
+    }
+    .image img{
+        width: 90vw;
+        height: auto;
+    }
+    .qsn label {
+        font-size: 1.5rem;
+    
+    }
+    .personal{
+        padding-top: 20px;
+    }
+
+    .submit button{
+        height: 100px;
+        font-size: 2rem;
+    }
+}
